@@ -234,7 +234,7 @@
     self.selected = images;
     //NSLog(@"### array of images ===> %@", images);
     NSLog(@"### User did pick %lu images", (unsigned long) images.count);
-    
+    if(images.count > 0){
     // UIImage *img;
     hud1 = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud1.delegate = self;
@@ -293,7 +293,13 @@
         }];
 
     }// End of loop For
-
+    }
+    else{
+        NSLog(@"User not pick any image !!");
+        [self dismissViewControllerAnimated:YES completion:nil];
+        loginButtonn.hidden = NO;
+        _btnBack.hidden = NO;
+    }
     // ###############################################################
     
 }
