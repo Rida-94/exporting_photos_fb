@@ -1,8 +1,6 @@
 # Exporting Facebook Photos
 The goal of this app is to let the user export his photos from Facebook to Firebase storage.
 
-
-
 ## Features
 * Sign in the user using Facebook (ask users for permission to access their Facebook albums and photos).
 * Once the user taps on any album, we load and display a grid of photos in the selected album and allows the user to choose one or many photos (check-mark on selected pictures). Albums and photos grid are paginated.
@@ -14,4 +12,4 @@ The goal of this app is to let the user export his photos from Facebook to Fireb
 * iOS 7.0+ target deployment
 * FBSDKCoreKit, FBSDKLoginKit and Bolts (>= 4.0)
 * Firebase API (>= 4.0)
-* MBProgressHUD ==> **https://github.com/jdg/MBProgressHUD**
+* MBProgressHUD ==> https://github.com/jdg/MBProgressHUD
